@@ -34,10 +34,6 @@ body {
     align-items: center;
 }
 
-.page-header.page-portfolio {
-    border-bottom: 1px solid #ECECEC;
-}
-
 /* логотип */
 
 .logo {
@@ -61,9 +57,13 @@ ul {
     list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     padding: 0;
     margin: 0;
+}
+
+img {
+    display: block;
 }
 
 /* навігація */
@@ -123,12 +123,20 @@ display: flex;
 /* секції */
 
 .section {
-    padding: 94px 0;
+    padding-top: 94px;
 }
 
 /* селектор героя */
 
+.container.hero {
+    width: 696px;
+    padding: 200px 0;
+}
+
 .hero {
+    width: 100%;
+    height: 600px;
+
     background-color: #2F303A;
     text-transform:uppercase;
     text-align: center;
@@ -140,7 +148,6 @@ display: flex;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
  }
@@ -202,6 +209,7 @@ display: flex;
  /* секція чим ми займаємось */
 
 .work-list {
+    margin-bottom: 94px;
     display: flex;
 }
 
@@ -220,7 +228,7 @@ display: flex;
 /* секція наша команда */
 
 .team {
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
 }
 
 .container.team {
@@ -244,15 +252,26 @@ display: flex;
 }
 
 .team-name {
+    margin: 30px 0 10px 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 
 .team-profession {
+    padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-text-color);
+}
+
+.team-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    background-color: var(--primary-white-color);
 }
 
 /* футер */
@@ -309,7 +328,11 @@ display: flex;
 color: var(--accent-color);
 }
 
-/* кнопки сторінки портфоліо */
+/* сторінкa портфоліо */
+
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .buttons {
     margin-bottom: 50px;
@@ -318,13 +341,17 @@ color: var(--accent-color);
 }
 
 .buttons-list {
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+
+    font: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    font-family: inherit;
     color: var(--primary-text-color);
     background-color: #F5F4FA;
-    border-color: #F5F4FA;
     cursor: pointer;
 }
 
@@ -344,12 +371,12 @@ color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    padding-bottom: 94px;
 }
 
 .portfolio-item {
     margin: 15px;
     width: 370px;
-    border-bottom: 1px solid #EEEEEE;
 }
 
 
@@ -358,6 +385,8 @@ color: var(--accent-color);
 }
 
 .portfolio-title {
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -370,5 +399,11 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.9;
     color: var(--secondary-text-color);
+}
+
+.portfolio-card {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
