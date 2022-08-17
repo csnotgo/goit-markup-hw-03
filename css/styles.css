@@ -191,7 +191,7 @@ display: flex;
 }
 /* секція особливості */
 
-.features.section {
+.features {
     padding-bottom: 47px;
 }
 
@@ -225,7 +225,7 @@ display: flex;
 
  /* секція чим ми займаємось */
 
-.work.section {
+.work {
     padding-top: 47px;
 }
 
